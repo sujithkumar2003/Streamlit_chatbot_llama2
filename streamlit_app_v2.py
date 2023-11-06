@@ -12,11 +12,8 @@ with st.sidebar:
         st.success('API key already provided!', icon='✅')
         replicate_api = st.secrets['REPLICATE_API_TOKEN']
     else:
-        replicate_api = "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"
-        if not (replicate_api.startswith('r8_') and len(replicate_api)==40):
-            st.warning('Please enter your credentials!', icon='⚠️')
-        else:
-            st.success('Proceed to entering your prompt message!', icon='👉')
+        replicate_api = "r8_DyMY95LRTUbaJDqvPmgQemuW8YoAwZQ4NoEyM"
+        
 
     # Refactored from https://github.com/a16z-infra/llama2-chatbot
     st.subheader('Models and parameters')
