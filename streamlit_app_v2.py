@@ -12,7 +12,7 @@ with st.sidebar:
         st.success('API key already provided!', icon='✅')
         replicate_api = st.secrets['REPLICATE_API_TOKEN']
     else:
-        replicate_api = st.text_input('Enter Replicate API token:', type='password')
+        replicate_api = "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"
         if not (replicate_api.startswith('r8_') and len(replicate_api)==40):
             st.warning('Please enter your credentials!', icon='⚠️')
         else:
